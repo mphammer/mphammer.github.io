@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Michael's Profile</title>
+		<!-- Jquery from Internet -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- adds styling for html -->
+		<link rel="stylesheet" type="text/css" href="CSS/NavBar.css">
+		<link rel="stylesheet" type="text/css" href="CSS/Cover.css">
+	</head>
+	<body>
+		<div id="navBar">
+			<div id="title" onclick="scroll('.screen')">MH</div>
+			<div class="navBarItem" onclick="scroll('#Edu')">Education </div>
+			<div class="navBarItem" onclick="scroll('#WorkExp')">Work Experience</div>
+			<div class="navBarItem" onclick="scroll('#Activ')">Activities</div>
+			<div class="navBarItem" onclick="scroll('#Proj')">Projects</div>
+		</div>
+		<div class="screen">
+			<div class="face"></div>
+			<div class="screenText">
+				<div class="name"></div>
+				Team Player - Hardworking - Creative
+			</div>
+			<div class="ALFRED" onclick="alfred()"></div>
+			<div class="speechBubble"></div>
+			<div class="downArrow" onclick="scroll('#Edu')"></div>
+		</div>
+		<div class="cover"></div>
+
+		<div id="Edu" class="section">
+			<div class="EduTitle">
+				Education
+			</div>
+			<div class="EduContent">
+				<h1>Bucknell University</h1>
+				<p><b>Major:</b> Computer Science and Engineering</p>
+				<p><b>Minor:</b> Mathematics</p>
+				<p><b>GPA:</b> 3.85</p>
+				<p><b>Engineering GPA:</b> 3.90</p>
+			</div>
+		</div>
+		<div id="WorkExp" class="section">
+			<div class="WorkExpTitle">
+			Work Experience
+			</div>
+			<div class="WorkExpContent"></div>
+		</div>
+		<div id="Activ" class="section">
+			<div class="ActivTitle">
+			Activities
+			</div>
+			<div class="ActivContent"></div>
+		</div>
+		<div id="Proj" class="section">
+			<div class="ProjTitle">
+			Projects
+			</div>
+			<div class="ProjContent"></div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script>
+			function scroll(section) {
+				//window.scrollTo(0,window.innerHeight);
+				$('html, body').animate({ scrollTop: $(section).offset().top - $("#navBar").height()}, 1000);
+			}
+
+			$(window).on('load', blah);
+
+			function blah() {
+				var str = "Hi my name is Alfred, an Artificial Inelligence for Michael's webpge. Click me for help on this webpage.";
+				var strSplit =  str.split("");
+				var counter = 0;
+				var SI=setInterval(function() {
+					var bubble = $(".speechBubble");
+					bubble.append(strSplit[counter]);
+					counter++;
+					if (counter ==str.length){clearInterval(SI)};
+				}, 50)
+			}
+
+			function alfred() {
+				alert("ALFRED is a work in progress");
+			}
+		</script>
+
+	</body>
+</html>

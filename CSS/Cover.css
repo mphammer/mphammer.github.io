@@ -1,0 +1,181 @@
+.cover {
+	background-image: url("../images/city.jpg");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+.screen {
+	position: absolute;
+	background-color: #0D0D0D;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	text-align: center;
+	background-color: rgba(13,13,13,0.85);
+}
+.face {
+	position: absolute;
+	height: 80%;
+	width: 45%;
+	top: 20%;
+	left: 55%;
+	background-image: url("../images/neal2.png");
+	background-size: cover;
+}
+.face:hover {
+	background-image: url("../images/neal2Wink.png");
+}
+.downArrow {
+	position: absolute;
+	height: 8%;
+	width: 4%;
+	top: 85%;
+	left: 48%;
+	background-image: url("../images/downArrow.png");
+	background-size: 100%;
+}
+.downArrow:hover {
+	cursor: pointer;
+}
+.screenText {
+	position: absolute;
+	height: 50%;
+	width:50%;
+	color: white;
+	font-size: 30px;
+	top: 25%;
+	left: 10%;
+	font-family: "verdana";
+}
+.name {
+	color: white;
+	font-size: 70px;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	font-family: Copperplate;
+	background-image: url("../images/name.png");
+	background-size: cover;
+}
+.ALFRED {
+	position: absolute;
+	height: 30%;
+	width:15%;
+	color: white;
+	font-size: 30px;
+	top: 70%;
+	left: 0%;
+	background-image: url("../images/rot.gif");
+	background-size: cover;
+}
+.ALFRED:hover {
+	cursor: pointer;
+}
+.speechBubble {
+	position: absolute;
+	height: 15%;
+	width: 30%;
+	top: 60%;
+	left: 15%;
+	opacity: 0.9;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: solid #424242 3px;
+	background-color: #1C1C1C;
+	color: white;
+	font-size: 20px;
+	font-family: arial;
+	text-align: left;
+	padding: 15px 15px 15px 15px;
+}
+.sectionDivide {
+	height: 2px;
+	width: 100%;
+	background-color: black;
+}
+#Edu {
+	width:100%;
+	height: 1000px;
+	text-align: center;
+	background-color: #F5F5F5;
+}
+.EduTitle {
+	font-size: 100px;
+	font-family: impact;
+	text-align: center;
+	color: black;
+}
+.EduContent {
+	background-color: #F5F5F5;
+	height: 1000px;
+	width: 100%;
+}
+#WorkExp {
+	width:100%;
+	height: 1000px;
+	text-align: center;
+	background-color: #F5F5F5;
+}
+.WorkExpTitle {
+	font-size: 100px;
+	font-family: impact;
+	text-align: center;
+	color: black;
+}
+.WorkExpContent {
+	background-color: #F5F5F5;
+	height: 1000px;
+	width: 100%;
+}
+#Activ {
+	width:100%;
+	height: 1000px;
+	text-align: center;
+	background-color: #F5F5F5;
+}
+.ActivTitle {
+	font-size: 100px;
+	font-family: impact;
+	text-align: center;
+	color: black;
+}
+.ActivContent {
+	background-color: #F5F5F5;
+	height: 1000px;
+	width: 100%;
+}
+#Proj {
+	width:100%;
+	height: 1000px;
+	text-align: center;
+	background-color: #F5F5F5;
+}
+.ProjTitle {
+	font-size: 100px;
+	font-family: impact;
+	text-align: center;
+	color: black;
+}
+.ProjContent {
+	background-color: #F5F5F5;
+	height: 1000px;
+	width: 100%;
+}
+
+.EduTitle {
+	color: black;
+}
+.EduContent {
+	background-color: white;
+	color: black;
+
+	padding: 40px 40px 40px 40px;
+	font-size: 25px;
+	font-family: verdana;
+}
+
+
+
+
+
