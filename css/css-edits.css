@@ -1,0 +1,32 @@
+.verticle-align-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.profile-pic-cover-edit {
+	height: 300px;
+	width: 100%;
+	text-align: center;
+}
+
+.profile-pic-edit {
+	vertical-align: middle;
+	max-height: 225px;
+	border-radius: 50%;
+	border: 5px solid #bcd0d1;
+	height: 100%;
+}
+
+.education-logo-holder-edit {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.education-logo-edit {
+	max-width: 200px;
+}
+
+.scale-with-grid {
+	
+}

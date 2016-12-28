@@ -1,108 +1,863 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Michael's Profile</title>
-		<!-- Jquery from Internet -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- adds styling for html -->
-		<link rel="stylesheet" type="text/css" href="CSS/NavBar.css">
-		<link rel="stylesheet" type="text/css" href="CSS/Cover.css">
-	</head>
-	<body>
-		<div id="navBar">
-			<div id="title" onclick="scroll('.screen')">MH</div>
-			<div class="navBarItem" onclick="scroll('#Edu')">Education </div>
-			<div class="navBarItem" onclick="scroll('#WorkExp')">Work Experience</div>
-			<div class="navBarItem" onclick="scroll('#Activ')">Activities</div>
-			<div class="navBarItem" onclick="scroll('#Proj')">Projects</div>
-		</div>
-		<div class="screen">
-			<div class="face"></div>
-			<div class="screenText">
-				<div class="name"></div>
-				Team Player - Hardworking - Creative
-			</div>
-			<div class="ALFRED" onclick="alfred()"></div>
-			<div class="speechBubble"></div>
-			<div class="downArrow" onclick="scroll('#Edu')"></div>
-		</div>
-		<div class="cover"></div>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-		<div id="Edu" class="section">
-			<div class="EduTitle">
-				Education
-			</div>
-			<div class="EduContent">
-				<h1>Bucknell University</h1>
-				<p><b>Major:</b> Computer Science and Engineering</p>
-				<p><b>Minor:</b> Mathematics</p>
-				<p><b>GPA:</b> 3.85</p>
-				<p><b>Engineering GPA:</b> 3.90</p>
-			</div>
-		</div>
-		<div id="WorkExp" class="section">
-			<div class="WorkExpTitle">
-			Work Experience
-			</div>
-			<div class="WorkExpContent"></div>
-		</div>
-		<div id="Activ" class="section">
-			<div class="ActivTitle">
-			Activities
-			</div>
-			<div class="ActivContent"></div>
-		</div>
-		<div id="Proj" class="section">
-			<div class="ProjTitle">
-			Projects
-			</div>
-			<div class="ProjContent"></div>
-		</div>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>CV | Michael Hammer</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/css-edits.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Education</a></li>
+            <li><a class="smoothscroll" href="#experience">Experience</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      
+
+      <div class="row banner">
+         <div class="profile-pic-cover-edit">
+            <span class="verticle-align-helper "></span>
+            <img class="profile-pic-edit"  src="images/IDCardPic.jpg" alt="">
+         </div>
+         <div class="banner-text">
+            <h1 class="responsive-headline">
+               I am Michael Hammer
+            </h1>
+            <h3>
+               <span>I'm a Computer Science and Engineering major at Bucknell University. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+               and learn more <a class="smoothscroll" href="#about">about me</a>.
+            </span>
+            </h3>
+            <hr />
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
 
 
+   <!-- About Section ------------------------------------------------------------------------ -->
+   <section id="about">
+
+      <div class="row">
+         <div class="three columns">
+            <img class="profile-pic"  src="images/IDCardPic.jpg" alt="" />
+         </div>
+
+         <div class="nine columns main-col">
+            <h2>About Me</h2>
+            <p>I am a Senior Computer Science and Engineering major at Bucknell University and I am pursuing a career in the technology industry. My objective is to apply my computer science and/or engineering skills to tackle challenging problems in a stimulating team environment, thereby making a positive impact to an organization and society.
+            </p>
+            <div class="row">
+               <div class="columns contact-details">
+                  <h2>Contact Details</h2>
+                  <p class="address">
+                     <span><strong>Cell:</strong> (805)304-1496</span>        <br>
+                     
+                     <span><strong>Email:</strong> mph009@bucknell.edu</span> <br>
+
+                     <span><strong>Home Address:</strong></span>              <br>
+						   <span>
+                        3290 Bordero Lane                                     <br>
+                        Thousand Oaks, CA 91362 US                            <br>
+                     </span>
+
+                     <span><strong>University Address:</strong></span>        <br>
+                     <span>
+                        Bucknell University                                   <br>
+                        701 Moore Avenue, C 1285                              <br>
+                        Lewisburg, PA 17837 US                                <br>
+                     </span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+            </div> 
+         </div>
+      </div>
+   </section> <!-- End About Section ------------------------------------------------------------ -->
 
 
+    <!-- EDUCATION SECTION ---------------------------------------------------------------------- -->
+   <section id="resume">
+
+      <div class="row education"> <!-- Bucknell University Section -->
+         <div class="three columns header-col">
+            <div class="education-logo-holder-edit">
+               <img class="education-logo-edit"  src="images/bucknell-seal.png" alt="">
+            </div>
+         </div>
+
+         <div class="nine columns main-col"> 
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Bucknell University <span>&bull;</span> May 2017</h3>
+                  <p class="info">Major: Computer Science and Engineering<br>Minor: Mathematics</p>
+                  <p>
+                  Bucknell University is a small liberal arts university in Pennsylvannia with a strong engineering program.
+                  </p>
+               </div>
+            </div> 
+         </div>
+      </div> 
 
 
+      <div class="row education"> <!-- Westlake High School Section -->
+         <div class="three columns header-col">
+            <div class="education-logo-holder-edit">
+               <img class="education-logo-edit"  src="images/whs-logo.png" alt="">
+            </div>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Westlake High School <span>&bull;</span> June 2013</h3>
+                  <p>
+                  Westlake High School is a public school in California. 
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section> <!-- End Education Section ----------------------------------------------------- -->
 
 
+   <!-- EXPERIENCE SECTION --------------------------------------------------------------- -->
+   <section id="experience">
+
+       <!-- Work Experience -->
+      <div class="row work">
+         <div class="three columns header-col">
+            <h1><span>Work Experience</span></h1>
+         </div>
+
+         <!-- JPL Internship -->
+         <div class="nine columns main-col">
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>NASA Jet Propulsion Lab</h3>
+                  <p class="info">Networking Developer Intern <span>&bull;</span> <em class="date">June 2016 - August 2016</em></p>
+                  <ul style="list-style-type:circle">
+                    <li>
+                        Designed and implemented a framework for communicating with servers at international locations, in conjunction with the European Space Agency, in order to help JPL learn about the CCSDS international networking standards for space agencies.
+                     </li>
+                     <li>
+                        Modified European networking software in Java to demonstrate transporting JPL space telemetry (data)
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <!-- JPL Internship -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>NASA Jet Propulsion Lab</h3>
+                  <p class="info">Web Developer Intern<span>&bull;</span> <em class="date">June 2015 - August 2015</em></p>
+                  <ul style="list-style-type:circle">
+                    <li>
+                        Developed web applications to improve Mars Relay Telemetry planners’ ability to visualize multiple time references (for Mars and Earth) during their Mars-Orbiter-Earth relay planning process 
+                     </li>
+                     <li>
+                        Used HTML, CSS, Javascript, and JQuery to design a dynamic calendar that graphically depicts Earth-time and Mars-time (Sols) for each Mars mission
+                     </li>
+                  </ul>
+               </div>
+            </div> 
+
+            <!-- JPL Internship -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>NASA Jet Propulsion Lab </h3>
+                  <p class="info">System Analysis Intern<span>&bull;</span> <em class="date">June 2014 - August 2014</em></p>
+                  <ul style="list-style-type:circle">
+                    <li>
+                        Created software to help visualize and assess the performance of the science data processing system used by the Orbiting Carbon Observatory mission
+                     </li>
+                     <li>
+                        Fetched space telemetry (data) with SQL commands, parsed data into JSON format with Python, and visualized information via a web interface
+                     </li>
+                  </ul>
+               </div>
+            </div> 
+
+            <!-- Study Group Leader -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Bucknell's Teaching and Learning Center </h3>
+                  <p class="info">Computer Science Study Group Leader <span>&bull;</span> <em class="date">June 2014 - August 2014</em></p>
+                  <ul style="list-style-type:circle">
+                    <li>
+                        Conceived implemented and lead Bucknell's first computer science study group.
+                     </li>
+                  </ul>
+
+                  <p class="info">Physics Study Group Leader <span>&bull;</span> <em class="date">June 2014 - August 2014</em></p>
+                  <ul style="list-style-type:circle">
+                    <li>
+                        Lead a study group in Physics
+                     </li>
+                  <ul>
+
+               </div>
+            </div> 
+
+         </div> 
+      </div> 
 
 
+      <div class="row work"> <!-- Activities -->
+         <div class="three columns header-col">
+            <h1><span>Activities</span></h1>
+         </div>
+
+         <!-- ACM -->
+         <div class="nine columns main-col">
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Association for Computing Machinery</h3>
+                  <p class="info">Member <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
+                  <p>
+                  Attended varioius events related to computer science
+                  </p>
+               </div>
+            </div> 
+
+            <!-- Tau Beta Pi -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Tau Beta Pi Engineering Honor Society</h3>
+                  <p class="info">Member <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
+                  <p>
+                  "Tau Beta Pi is the only engineering honor society representing the entire engineering profession. It is the nation's second-oldest honor society, founded at Lehigh University in 1885 to mark in a fitting manner those who have conferred honor upon their Alma Mater by distinguished scholarship and exemplary character as students in engineering..."
+                  </p>
+               </div>
+            </div>
+
+            <!-- Boy Scouts -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Boy Scouts of America</h3>
+                  <p class="info">Life Scout (Rank preceding Eagle) <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
+                  <p>
+                     ▪️ Developed strong morals 
+                     <br>
+                     ▪️ Gained experience in leadership, teamwork, innovation, organization, and more
+                     <br>
+                     ▪️ Appreciated Scout Motto: Be Prepared
+                     <br>
+                  </p>
+               </div>
+            </div>
+
+            <!-- Los Robles Hospital -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>Los Robles Hospital</h3>
+                  <p class="info">Volunteer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
+                  <p>
+                     Took on a variety of responsibilities including patient transport, meal delivery, specimen transport, emergency response, and front desk management.
+                  </p>
+               </div>
+            </div>
+
+            <!-- Realy for Life -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>American Cancer Society Relay for Life</h3>
+                  <p class="info">Committee Member and Volunteer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
+                  <p>
+                     Fundraised, planned, and lead activities for main event, and organized youth activities.
+                  </p>
+               </div>
+            </div>
 
 
+         </div>
+      </div>
 
 
+      <div class="row skill"> <!-- Skills -->
+         <div class="three columns header-col">
+            <h1><span>Technical Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <h3>Focus Areas</h3>
+            <p>
+               Networking, Web Development, Data Mining, General Programming
+            </p>
+
+            <h3>Primary Skills</h3>
+            <p>
+               Python, Java, C, HTML, CSS, JavaScript, jQuery, Unix
+            </p>
+
+            <h3>Familiarity</h3>
+            <p>
+               C++, SQL, R, Matlab, LATEX, Databases, Artificial Intelligence (In Progress)
+            </p>
+			</div> 
+      </div> 
+
+   </section>  <!-- End Work Experience Section ------------------------------------------------ -->
 
 
+   <!-- PROJECTS SECTION ---------------------------------------------------------------------- -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Projects.</h1>
+
+            <!-- Module Covers -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/coffee.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Children Museum's Rocket Launch Game</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/console.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Bucknell Interactive Map</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div>
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/judah.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Raspberry Pi Car</h5>
+                              <p><font size="3" face="arial">
+                                 Remote control car via Rasperry Pi Computer and iPhone
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div> 
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/into-the-light.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Student Course Schedules Data Mining</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div> 
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/farmerboy.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Texas Hold'em Poker AI</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div> 
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/girl.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Solar System Simulation</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div> 
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/origami.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Origami</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div> 
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/retrocam.jpg">
+
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Retrocam</h5>
+                              <p><font size="3" face="arial">
+                                 Interactive game to teach kids about Rocket Ship dynamics
+                              </font></p>
+          					   </div>
+                        </div>
+                        <!--div class="link-icon"><i class="icon-plus"></i></div-->
+                     </a>
+                  </div>
+          		</div> 
+
+            </div>
+         </div>
 
 
+         <!-- Modal Popups Content -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+            <div class="scale-with-grid-container">
+		       <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+		      </div>
+            <div class="description-box">
+			      <h4>Coffee Cup</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+		       <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Console</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+		      <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/pi-car.gif" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Raspberry Pi Car</h4>
+			      <p>
+                  Over the summer I created a remote control car with a Raspberry Pi 2 computer. It is controlled via the Blynk applicaiton on the iPhone through wifi. We developed the controls in Python and purchased hardware for the components.
+               </p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-03 End -->
+
+         <div id="modal-04" class="popup-modal mfp-hide">
+		      <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Into the Light</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-04 End -->
+
+         <div id="modal-05" class="popup-modal mfp-hide">
+		      <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Farmer Boy</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-05 End -->
+
+         <div id="modal-06" class="popup-modal mfp-hide">
+		      <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Girl</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-06 End -->
+
+         <div id="modal-07" class="popup-modal mfp-hide">
+		      <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Origami</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-07 End -->
+
+         <div id="modal-08" class="popup-modal mfp-hide">
+		      <div class="scale-with-grid-container">
+               <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+            </div>
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+            <div class="link-box">
+               <a href="http://www.behance.net">Details</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+	      </div><!-- modal-01 End -->
 
 
+      </div> <!-- row End -->
 
-		<script>
-			function scroll(section) {
-				//window.scrollTo(0,window.innerHeight);
-				$('html, body').animate({ scrollTop: $(section).offset().top - $("#navBar").height()}, 1000);
-			}
+   </section>  <!-- End of Projects Section -------------------------------------------------- -->
 
-			$(window).on('load', blah);
 
-			function blah() {
-				var str = "Hi my name is Alfred, an Artificial Inelligence for Michael's webpge. Click me for help on this webpage.";
-				var strSplit =  str.split("");
-				var counter = 0;
-				var SI=setInterval(function() {
-					var bubble = $(".speechBubble");
-					bubble.append(strSplit[counter]);
-					counter++;
-					if (counter ==str.length){clearInterval(SI)};
-				}, 50)
-			}
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
 
-			function alfred() {
-				alert("ALFRED is a work in progress");
-			}
-		</script>
+      <div class="text-container">
 
-	</body>
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           to do what you believe is great work. And the only way to do great work is to love what you do.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                           </p>
+                           <cite>Steve Jobs</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                           </p>
+                           <cite>Mr. Adobe</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">
+                     If you would like to send me an email directly, please fill out the subject and message below.
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> An error has occurred</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Address and Phone</h4>
+					   <p class="address">
+						   Jonathan Doe<br>
+						   1600 Amphitheatre Parkway <br>
+						   Mountain View, CA 94043 US<br>
+						   <span>(123) 456-7890</span>
+					   </p>
+
+				   </div>
+
+               <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">2 Days Ago</a></b>
+                     </li>
+                     <li>
+                        <span>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">3 Days Ago</a></b>
+                     </li>
+                  </ul>
+
+		         </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
 </html>
