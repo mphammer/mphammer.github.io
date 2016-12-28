@@ -708,7 +708,7 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="inc/sendEmail.php" method="post" id="contactForm" name="contactForm">
+               <form action="sendEmail.php" method="post" id="contactForm" name="contactForm">
 					<fieldset>
 
                   <div>
@@ -740,6 +740,24 @@
 
 					</fieldset>
 				   </form> <!-- Form End -->
+
+
+               <form method="post" name="myemailform" action="form-to-email.php">
+               <p>
+                  <label for='name'>Enter Name: </label><br>
+                  <input type="text" name="name">
+               </p>
+               <p>
+                  <label for='email'>Enter Email Address:</label><br>
+                  <input type="text" name="email">
+               </p>
+               <p>
+                  <label for='message'>Enter Message:</label> <br>
+                  <textarea name="message"></textarea>
+               </p>
+               <input type="submit" name='submit' value="submit">
+            </form>
+
 
                <!-- contact-warning -->
                <div id="message-warning"> An error has occurred</div>
