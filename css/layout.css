@@ -232,6 +232,21 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+/* about social links */
+#about .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+#about .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+#about .social li a { color: #fff; }
+#about .social li a:hover { color: #11ABB0; }
+
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section

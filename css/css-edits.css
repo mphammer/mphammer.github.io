@@ -27,6 +27,9 @@
 	max-width: 200px;
 }
 
-.scale-with-grid {
-	
+.project-img-container-edit {
+	background-color: #111111;
+	height: 215px;
+	width: 215px;
+	background-size: cover;
 }
