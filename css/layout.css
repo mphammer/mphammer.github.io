@@ -624,19 +624,21 @@ ul#nav li.current a { color: #F06000; }
    margin-right: 8px;
 }
 .popup-modal .link-box {
-   padding: 18px 36px;
+   padding: 9px 18px;
    background: #111;
    text-align: left;
 }
 .popup-modal .link-box a {
    color: #fff;
-	font: 11px/21px 'opensans-bold', sans-serif;
+	/*font: 11px/21px 'opensans-bold', sans-serif;*/
+  font: 30px 'opensans-bold', sans-serif;
 	text-transform: uppercase;
    letter-spacing: 3px;
    cursor: pointer;
 }
 .popup-modal a:hover {	color: #00CCCC; }
 .popup-modal a.popup-modal-dismiss { margin-left: 24px; }
+.popup-modal a.popup-modal-dismiss:hover { color: #ff0000; }
 
 
 /* fadein/fadeout effect for modal popup
@@ -1003,7 +1005,10 @@ call-to-action .button {
 }
 
 
-#contact .contact-details { width: 41.66667%; }
+#contact .contact-details { 
+    width: 41.66667%;
+    
+ }
 #contact .download {
    width: 58.33333%;
    padding-top: 6px;
@@ -1012,6 +1017,7 @@ call-to-action .button {
 #contact .download .button {
    margin-top: 6px;
    background: #444;
+   color: white;
 }
 #contact .download .button:hover {
    background: #fff;
