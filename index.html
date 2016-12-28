@@ -79,7 +79,7 @@
          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
 
-   </header> <!-- Header End -->
+   </header> <!-- Header End ---------------------------------------------------------------- -->
 
 
    <!-- About Section ------------------------------------------------------------------------ -->
@@ -124,34 +124,44 @@
     <!-- EDUCATION SECTION ---------------------------------------------------------------------- -->
    <section id="resume">
 
-      <div class="row education"> <!-- Bucknell University Section -->
+      <!-- Bucknell University Section -->
+      <div class="row education"> 
          <div class="three columns header-col">
             <div class="education-logo-holder-edit">
                <img class="education-logo-edit"  src="images/bucknell-seal.png" alt="">
             </div>
          </div>
-
          <div class="nine columns main-col"> 
             <div class="row item">
                <div class="twelve columns">
                   <h3>Bucknell University <span>&bull;</span> May 2017</h3>
                   <p class="info">Major: Computer Science and Engineering<br>Minor: Mathematics</p>
-                  <p>
+                  
                   Bucknell University is a small liberal arts university in Pennsylvannia with a strong engineering program.
-                  </p>
+                  
+
+                  <div id="BU-hidden" class="hidden-section">
+                     <p>
+                        Here is some more information about my experience at Bucknell...
+                     </p>
+                  </div>                  
+                  <div id="BU-hidden-toggle" class="hidden-section-toggle">
+                     <div style="height:17px">Show More</div>
+                     <i class="fa fa-caret-down" onclick="sectionToggle('BU-hidden')"></i>
+                  </div>
+
                </div>
             </div> 
          </div>
       </div> 
 
-
-      <div class="row education"> <!-- Westlake High School Section -->
+      <!-- Westlake High School Section -->
+      <div class="row education"> 
          <div class="three columns header-col">
             <div class="education-logo-holder-edit">
                <img class="education-logo-edit"  src="images/whs-logo.png" alt="">
             </div>
          </div>
-
          <div class="nine columns main-col">
             <div class="row item">
                <div class="twelve columns">
@@ -164,10 +174,10 @@
          </div>
       </div>
 
-   </section> <!-- End Education Section ----------------------------------------------------- -->
+   </section> <!-- End Education Section ------------------------------------------------------ -->
 
 
-   <!-- EXPERIENCE SECTION --------------------------------------------------------------- -->
+   <!-- EXPERIENCE SECTION -------------------------------------------------------------------- -->
    <section id="experience">
 
        <!-- Work Experience -->
@@ -435,6 +445,7 @@
                   </div>
           		</div> 
 
+               <!-- empty modal -->
                <div class="columns portfolio-item"></div> 
 
                <!-- Poker Game AI -->
@@ -475,6 +486,7 @@
                   </div>
           		</div> 
 
+               <!-- Empty Modal -->
                <div class="columns portfolio-item"></div> 
 
             </div>
@@ -897,6 +909,7 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+   <script src="js/hidden-section.js"></script>
 
 </body>
 

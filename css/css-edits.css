@@ -34,3 +34,21 @@
 	background-size: cover;
 }
 
+.hidden-section {
+	display: none;
+}
+
+.hidden-section-toggle {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 10px;
+}
+
+.hidden-section-toggle i {
+	cursor: pointer;
+	font-size: 20px;
+}
+.hidden-section-toggle i:hover {
+	color: #11ABB0;
+}
